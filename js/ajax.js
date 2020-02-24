@@ -19,16 +19,17 @@ ajax.onload = function(){
                         <p> ${data.cartInfo.store}</p>`;
 
    // filter example
-   let display = ' ' ;
-   const specialItems = data.cartItems.filter(function(item){
+   let display = '' ;
+   const specialItems = data.cartItem.filter(function(item){
     return item.price >1;
   })
 
-specialItems.cartItems.forEach(function(item){
-  display += `<div class="item> 
-  <p>item id:${item.id}</p>
-  <p>item name:${item.name}</p>
-  <p>item price:${item.price}</p>
+specialItems.forEach(function(item){
+  display +=
+  `<div class="item"> 
+  <p>item id: ${item.id}</p>
+  <p>item name: ${item.name}</p>
+  <p>item price: ${item.price}</p>
   </div> `;
   itemInfo.innerHTML = display;
 
@@ -45,6 +46,3 @@ ajax.onerror = function(){
 ajax.send();
 };
 
-btn.addEventListener("click",function(){
-  getData("text.txt");
-});
