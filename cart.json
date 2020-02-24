@@ -1,3 +1,11 @@
 {
-  "name":"John"
+ "cartInfo":{
+   "name":"shopping cart",
+   "store":"grocery store"
+ },
+ "xartItem":[
+   {"id":1,"name":"apple","price":1},
+   {"id":2,"name":"banana","price":2},
+   {"id":3,"name":"orange","price":3}
+  ]
 }
