@@ -1,30 +1,46 @@
 const btn =document.querySelector('.btn');
-const info =document.querySelector('.info');
+const cartInfo = document.querySelector('.cartInfo');
+const itemInfo = document.querySelector('.itemInfo');
+
 // 
+btn.addEventListener("click",function(){
+  getData("cart.json");
+});
 
 function getData(url){
 
   const ajax = new XMLHttpRequest();
+ ajax.open('GET',url,true);
 
-ajax.open('GET','text.txt',true);
-
-//  old method
-// ajax.onreadystatechange = function(){
-//   if(this.status === 200 && this.readyState ===4){
-//     info.textContent = this.responseText;
-//   }
-// };
 
 ajax.onload = function(){
   if(this.status ==200){
-    info.textContent = this.responseText;
+   const data = JSON.parse(this.responseText);
+   cartInfo.innerHTML = `<p> ${data.cartInfo.name}</p>
+                        <p> ${data.cartInfo.store}</p>`;
+  let displa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
   }else{
-    console.log(this.statusText);
+    this.onerror();
   }
 }
 //  when it is error
 ajax.onerror = function(){
-  console.log('there was an error');
+  console.log('there was a mistake');
 }
 
 ajax.send();
