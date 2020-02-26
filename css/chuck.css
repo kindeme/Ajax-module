@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.image {
+.img {
   display: block;
   width: 100%;
 }
@@ -20,4 +20,10 @@
   color: black;
   background: #d69847;
   padding: .6rem 1rem;
+}
+
+.center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
 }

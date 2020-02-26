@@ -3,7 +3,7 @@
   display: block;
   text-align: center;
 }
-.image{
+.img{
   display: block;
   width: 100%;
 }
@@ -17,4 +17,9 @@
   color: black;
   background: rgb(214, 152, 71);
   padding: .6rem 1rem;
+}
+.center{
+  position:absolute;
+  top: 20%;
+  left: 50%;
 }
