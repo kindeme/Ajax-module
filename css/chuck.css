@@ -1,20 +1,23 @@
-.container{
+.container {
   height: 100vh;
   display: block;
   text-align: center;
 }
-.image{
+
+.image {
   display: block;
   width: 100%;
 }
-.job-title{
+
+.job-title {
   font-size: 2rem;
   text-transform: capitalize;
 }
-.mainBtn{
+
+.mainBtn {
   border: none;
   outline: none;
   color: black;
-  background: rgb(214, 152, 71);
+  background: #d69847;
   padding: .6rem 1rem;
 }
