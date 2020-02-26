@@ -4,9 +4,10 @@
   text-align: center;
 }
 
-.img {
+#img {
   display: block;
-  width: 100%;
+  width: 50%;
+  text-align: center;
 }
 
 .job-title {
@@ -14,7 +15,7 @@
   text-transform: capitalize;
 }
 
-.mainBtn {
+.btn {
   border: none;
   outline: none;
   color: black;
@@ -24,6 +25,8 @@
 
 .center {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
