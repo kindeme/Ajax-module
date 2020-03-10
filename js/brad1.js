@@ -1,19 +1,15 @@
-// const post =[
-//   {title: 'Post One',body:"This is post one"},
-//   {title: 'Post two',body:"This is post two"}
+document.getElementById('button').addEventListener('click',loadData);
 
-// ];
-// function createPost(){
-//   setTimeout(function(){
-//     setTimeout(function(){
-//       posts.push(post);
-//     })
-//   })
+function loadData(){
+  // Create an XHR Object 
+  const xhr = new XMLHttpRequest();
+  //  Open
+  xhr.open("Get","text.txt", true);
 
-// }
-// function getPost(){
-
-// }
-function add (x, y){
-  return x + y;
+  xhr.onload = function(){
+    if(this.status === 200){
+      console.log(this.responseText);
+    }
+  }
+  xhr.send();
 }
