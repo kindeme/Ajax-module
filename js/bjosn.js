@@ -30,7 +30,7 @@ function loadCustomers(e){
     if(this.status ===200){
     const customers = JSON.parse(this.responseText);
     let output = '';
-customers.forEach(function(customer){
+customers.forEach(function(customer){ 
    output += `<ul> 
   <li> ID: ${customer.id}</li>
   <li> Name: ${customer.name}</li>
